@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0;
+
+  font-family: 'Open Sans';
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  line-height: 2;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+*:focus {
+  outline: 2px solid var(--faux-cadmium);
+}
+
+button, input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+button:hover,
+a:hover {
+  color: var(--light-amethyst);
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid var(--faux-cadmium);
+}
+
+button:active {
+  color: var(--faux-cadmium);
+  outline: none;
+}
+
+a:active {
+  color: var(--amethyst);
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: color .1s linear;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, strong {
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* visually-hidden */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* section title */
+.section__title {
+  margin-top: 80px;
+  margin-bottom: 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+/* @media (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .section__title {
+    margin-top: 58px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section__title {
+    margin-top: 39px;
+
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .section__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+} */

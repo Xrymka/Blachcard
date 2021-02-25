@@ -1,0 +1,98 @@
+.hero {
+  max-height: 800px;
+  margin-bottom: 89px;
+
+  color: var(--white);
+}
+
+.hero__slider {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.hero__slide {
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 800px;
+}
+
+.hero__swiper-1 {
+  min-height: 800px;
+  background-size: cover !important;
+  background-position: bottom center;
+  animation: mymove 8s infinite;
+  background: url('../image/hero/1.jpg') no-repeat;
+}
+
+.hero__swiper-2 {
+  min-height: 800px;
+  background-size: cover !important;
+  background-position: bottom center;
+  animation: mymove 8s infinite;
+  background: url('../image/hero/2.jpg') no-repeat;
+}
+
+.hero__swiper-3 {
+  min-height: 800px;
+  background-size: cover !important;
+  background-position: bottom center;
+  animation: mymove 8s infinite;
+  background: url('../image/hero/3.jpg') no-repeat;
+}
+
+.hero__inner {
+  position: relative;
+  max-width: 590px;
+  z-index: 1;
+
+  padding: 70px 0px 122px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  font-size: 72px;
+  line-height: 83.9px;
+  font-weight: 700;
+}
+
+.hero__text {
+  margin-bottom: 92px;
+
+  line-height: 30px;
+}
+
+.hero__btn {
+  min-width: 314px;
+  min-height: 70px;
+  padding: 22.5px 35px;
+  background-color: var(--amethyst);
+  border-radius: 100px;
+  transition: border .1s linear, background .1s linear;
+  border: 3px solid var(--amethyst);
+}
+
+.hero__btn:hover {
+  color: var(--white);
+  border: 3px solid #D1A9F0;
+}
+
+.hero__btn:focus-visible {
+  color: var(--white);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--light-amethyst);
+}
+
+.hero__btn:active {
+  color: var(--white);
+  background-color: var(--faux-cadmium);
+  border: 3px solid #D1A9F0;
+}
+
+@keyframes mymove {
+  50% {transform: scale(1.4);}
+}

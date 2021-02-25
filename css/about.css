@@ -1,0 +1,9 @@
+.about {
+  margin-bottom: 69px;
+}
+
+.about__text {
+  max-width: 1082px;
+
+  font-size: 16px;
+}
