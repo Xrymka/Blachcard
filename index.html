@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/var.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -23,8 +24,7 @@
   <script defer src="js/focus-visible.js"></script>
   <script defer src="js/simplebar.js"></script>
   <script defer src="js/swiper-bundle.js"></script>
-  <script defer src="js/jquery.js"></script>
-  <script defer src="js/jguery-ui.js"></script>
+  <script defer src="js/choices.min.js"></script>
   <script defer src="js/index.js"></script>
   <title>Blanchcard - художественная галерея</title>
 </head>
@@ -201,108 +201,119 @@
       <div class="container container--gallery">
         <div class="gallery__left">
           <h2 class="section__title">Галерея</h2>
-          <p class="gallery__text">
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.
-          </p>
-        </div>
-        <div class="gallery__right">
-          <!-- Slider main container -->
-        <div class="swiper-container gallery__slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/1.jpg" alt="Торс. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/2.jpg" alt="Женщина с граблями. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/3.jpg" alt="Трагедия жизни. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/4.jpg" alt="Супрематизм. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/5.jpg" alt="Женщина с вёдрами. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/6.jpg" alt="Супрематизм 1916. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/7.jpg" alt="Плотник. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/8.jpg" alt="Два крестьянина на фоне полей. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/9.jpg" alt="Многоугольники. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/10.jpg" alt="Крестьянин в поле. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/11.jpg" alt="Супрематизм. Жёлтое и чёрное. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/12.jpg" alt="Девушки в поле. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/13.jpg" alt="Женщина в поле. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/14.jpg" alt="Абстрактная вечеринка. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/15.jpg" alt="Спортсмены. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/16.jpg" alt="Бюро и комната. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/17.jpg" alt="Зимний пейзаж. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/18.jpg" alt="Марфа и Ванька. Малевич">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/19.jpg" alt="Итальянский полдень. Карл Брюллов">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/20.jpg" alt="Блеф слепой игры. Фрагонар">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/21.jpg" alt="Самсон и Данила. Рубенс">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/22.jpg" alt="Цветы и плоды. Ян ван Хёйсум">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/23.jpg" alt="Неизвестная. Кромской">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/24.jpg" alt="Игра в кости. Семирадский">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/25.jpg" alt="Отплытие царицы Савской. Клод Лоррен">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/26.jpg" alt="Большие купальщицы. Сезанн">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/27.jpg" alt="Клод Жозеф Верне">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/28.jpg" alt="Падение Икара. Брейгель">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/29.jpg" alt="Русалки. Маковский">
-              </div>
-              <div class="swiper-slide gallery__slide">
-                <img class="gallery__img" src="image/gallery/30.jpg" alt="Весна. Боттичелли">
-              </div>
+          <div class="gallery__left-inner">
+            <form action="#">
+              <label class="gallery__label" name="gallery__select" for="gallery__select">Фильтровать по:</label>
+              <select name="gallery__select" id="gallery__select" class="gallery__select">
+                <option value="Author" class="gallery__option">Автор</option>
+                <option value="Direction" class="gallery__option">Направление</option>
+                <option value="Technique" class="gallery__option">Техника</option>
+              </select>
+            </form>
+            <p class="gallery__text">
+              Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+            </p>
           </div>
         </div>
+        <div class="gallery__right">
+          <div class="swiper-container gallery__slider">
+            <div class="swiper-pagination gallery__pagination"></div>
+            <div class="swiper-button-prev gallery__button-prev"></div>
+            <div class="swiper-button-next gallery__button-next"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/1.jpg" alt="Торс. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/2.jpg" alt="Женщина с граблями. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/3.jpg" alt="Трагедия жизни. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/4.jpg" alt="Супрематизм. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/5.jpg" alt="Женщина с вёдрами. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/6.jpg" alt="Супрематизм 1916. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/7.jpg" alt="Плотник. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/8.jpg" alt="Два крестьянина на фоне полей. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/9.jpg" alt="Многоугольники. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/10.jpg" alt="Крестьянин в поле. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/11.jpg" alt="Супрематизм. Жёлтое и чёрное. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/12.jpg" alt="Девушки в поле. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/13.jpg" alt="Женщина в поле. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/14.jpg" alt="Абстрактная вечеринка. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/15.jpg" alt="Спортсмены. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/16.jpg" alt="Бюро и комната. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/17.jpg" alt="Зимний пейзаж. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/18.jpg" alt="Марфа и Ванька. Малевич">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/19.jpg" alt="Итальянский полдень. Карл Брюллов">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/20.jpg" alt="Блеф слепой игры. Фрагонар">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/21.jpg" alt="Самсон и Данила. Рубенс">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/22.jpg" alt="Цветы и плоды. Ян ван Хёйсум">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/23.jpg" alt="Неизвестная. Кромской">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/24.jpg" alt="Игра в кости. Семирадский">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/25.jpg" alt="Отплытие царицы Савской. Клод Лоррен">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/26.jpg" alt="Большие купальщицы. Сезанн">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/27.jpg" alt="Клод Жозеф Верне">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/28.jpg" alt="Падение Икара. Брейгель">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/29.jpg" alt="Русалки. Маковский">
+                </div>
+                <div class="swiper-slide gallery__slide" tabindex="0">
+                  <img class="gallery__img" src="image/gallery/30.jpg" alt="Весна. Боттичелли">
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </section> <!-- /gallery -->
@@ -343,5 +354,6 @@
     <div class="container">
     </div>
   </footer> <!-- /footer -->
+
 </body>
 </html>

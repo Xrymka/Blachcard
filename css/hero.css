@@ -64,6 +64,7 @@
   margin-bottom: 92px;
 
   line-height: 30px;
+  letter-spacing: .9px;
 }
 
 .hero__btn {
@@ -74,11 +75,13 @@
   border-radius: 100px;
   transition: border .1s linear, background .1s linear;
   border: 3px solid var(--amethyst);
+
+  letter-spacing: 0.5px;
 }
 
 .hero__btn:hover {
   color: var(--white);
-  border: 3px solid #D1A9F0;
+  border: 3px solid var(--faux-bright);
 }
 
 .hero__btn:focus-visible {
@@ -90,7 +93,7 @@
 .hero__btn:active {
   color: var(--white);
   background-color: var(--faux-cadmium);
-  border: 3px solid #D1A9F0;
+  border: 3px solid var(--faux-bright);
 }
 
 @keyframes mymove {
