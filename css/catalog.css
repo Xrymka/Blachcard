@@ -1,0 +1,114 @@
+.catalog {
+  margin-top: 90px;
+
+  font-size: 16px;
+}
+
+.catalog__inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.catalog__title {
+  margin: 0 40px 6px 0;
+}
+
+.catalog__list {
+  display: flex;
+
+  line-height: 1;
+}
+
+.catalog__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.catalog__item:first-child .catalog__btn {
+  background: url('../image/catalog/french.png') no-repeat 50%;
+}
+
+.catalog__item:nth-child(2) .catalog__btn {
+  background: url('../image/catalog/german.png') no-repeat 50%;
+}
+
+.catalog__item:nth-child(3) .catalog__btn {
+  background: url('../image/catalog/italian.png') no-repeat 50%;
+}
+
+.catalog__item:nth-child(4) .catalog__btn {
+  background: url('../image/catalog/russian.png') no-repeat 50%;
+}
+
+.catalog__item:nth-child(5) .catalog__btn {
+  background: url('../image/catalog/belgian.png') no-repeat 50%;
+}
+
+.catalog__btn {
+  position: relative;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  transition: all 0.3 linear;
+}
+
+.catalog__btn:hover {
+  filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
+}
+
+.catalog__btn:focus-visible {
+  outline: none;
+  border: 2px solid var(--amethyst);
+  border-radius: 50%;
+}
+
+.catalog__btn--is-focused.catalog__btn::after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2px solid var(--amethyst);
+  transform: translate(-50%, -50%);
+}
+
+.catalog__text {
+  max-width: 1080px;
+
+  letter-spacing: 0.01px;
+}
+
+.gallery__content-list-item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+
+  border-bottom: 1px solid #CACACA;
+}
+
+.gallery__content-list-item-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 47px;
+
+  text-align: left;
+}
+
+.gallery__content-list-item-icon {
+  position: absolute;
+  display: inline-block;
+  top: 45%;
+  right: 0;
+  transform:translateY(-45%);
+  background-color: #ececec;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+
+  font-size: 0;
+}

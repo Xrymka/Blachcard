@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/gallery.css">
-  <!-- <link rel="stylesheet" href="css/catalog.css">
-  <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <!-- <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/editions.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
@@ -25,6 +25,8 @@
   <script defer src="js/simplebar.js"></script>
   <script defer src="js/swiper-bundle.js"></script>
   <script defer src="js/choices.min.js"></script>
+  <script defer src="js/jquery.js"></script>
+  <script defer src="js/jguery-ui.js"></script>
   <script defer src="js/index.js"></script>
   <title>Blanchcard - художественная галерея</title>
 </head>
@@ -100,7 +102,7 @@
         <ul class="header__down-list">
           <li class="header__down-list-item">
             <h3 class="down-list-title" tabindex="0">Реализм</h3>
-            <ul class="down__list" data-simplebar data-target="one">
+            <ul class="down__list" data-simplebar>
               <li class="down__list-item"><a href="#">Тинторетто</a></li>
               <li class="down__list-item"><a href="#">Фридрих</a></li>
               <li class="down__list-item"><a href="#">Леонадро</a></li>
@@ -109,7 +111,7 @@
           </li>
           <li class="header__down-list-item">
             <h3 class="down-list-title" tabindex="0">Импрессионизм</h3>
-            <ul class="down__list" data-simplebar data-target="two">
+            <ul class="down__list" data-simplebar>
               <li class="down__list-item"><a href="#">Моне</a></li>
               <li class="down__list-item"><a href="#">Сислей</a></li>
               <li class="down__list-item"><a href="#">Мане</a></li>
@@ -232,7 +234,7 @@
                   <img class="gallery__img" src="image/gallery/3.jpg" alt="Трагедия жизни. Малевич">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
-                  <img class="gallery__img" src="image/gallery/4.jpg" alt="Супрематизм. Малевич">
+                  <img class="gallery__img" src="image/gallery/4.jpg" alt="Супрематизм. Иван Клюн">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
                   <img class="gallery__img" src="image/gallery/5.jpg" alt="Женщина с вёдрами. Малевич">
@@ -280,7 +282,7 @@
                   <img class="gallery__img" src="image/gallery/19.jpg" alt="Итальянский полдень. Карл Брюллов">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
-                  <img class="gallery__img" src="image/gallery/20.jpg" alt="Блеф слепой игры. Фрагонар">
+                  <img class="gallery__img" src="image/gallery/20.jpg" alt="Игра в жмурки. Фрагонар">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
                   <img class="gallery__img" src="image/gallery/21.jpg" alt="Самсон и Данила. Рубенс">
@@ -301,13 +303,13 @@
                   <img class="gallery__img" src="image/gallery/26.jpg" alt="Большие купальщицы. Сезанн">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
-                  <img class="gallery__img" src="image/gallery/27.jpg" alt="Клод Жозеф Верне">
+                  <img class="gallery__img" src="image/gallery/27.jpg" alt="Река с рыбаками. Клод Жозеф Верне">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
                   <img class="gallery__img" src="image/gallery/28.jpg" alt="Падение Икара. Брейгель">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
-                  <img class="gallery__img" src="image/gallery/29.jpg" alt="Русалки. Маковский">
+                  <img class="gallery__img" src="image/gallery/29.jpg" alt="Счастливая Аркадия. Маковский">
                 </div>
                 <div class="swiper-slide gallery__slide" tabindex="0">
                   <img class="gallery__img" src="image/gallery/30.jpg" alt="Весна. Боттичелли">
@@ -321,6 +323,61 @@
     <!-- catalog -->
     <section class="catalog" id="catalog">
       <div class="container">
+        <div class="catalog__inner">
+          <h2 class="section__title catalog__title">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <button class="catalog__btn">
+                <span class="visually-hidden">Французский язык</span>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__btn">
+                <span class="visually-hidden">Немецкий язык</span>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__btn catalog__btn--is-focused">
+                <span class="visually-hidden">Итальянский язык</span>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__btn">
+                <span class="visually-hidden">Русский язык</span>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__btn">
+                <span class="visually-hidden">Бельгийский язык</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+        <div class="gallery__content">
+          <div class="gallery__content-left">
+            <img src="" alt="">
+            <h3 class="gallery__content-name"></h3>
+            <h4 class="gallery__content-date"></h4>
+            <p class="gallery__content-info"></p>
+          </div>
+          <div class="gallery__content-right">
+            <ul class="gallery__content-list" id="accordion">
+              <li class="gallery__content-list-item" tabindex="0">
+                <button type="button" class="gallery__content-list-item-btn">С 1400 по 1499 гг.<span class="gallery__content-list-item-icon">кнопка</span></button>
+                <div class="gallery__content-list-item-text">
+
+                </div>
+              </li>
+              <li class="gallery__content-list-item" tabindex="0">
+                <button type="button" class="gallery__content-list-item-btn">С 1500 по 1599 гг.<span class="gallery__content-list-item-icon">кнопка</span></button>
+                <div class="gallery__content-list-item-text">
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
       </div>
     </section> <!-- /catalog -->
 

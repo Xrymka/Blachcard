@@ -7,6 +7,8 @@
 // })
 
 
+/* ===== 3rd-party libraries ===== */
+
 /* Swiper */
 var heroSwiper = new Swiper('.hero__slider', {
   autoHeight: true,
@@ -33,6 +35,42 @@ var galerrySwiper = new Swiper('.gallery__slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+/* Select */
+const element = document.querySelector('select');
+const choices = new Choices(element, {
+  searchEnabled: false,
+  itemSelectText: '',
+});
+
+/* Accordion */
+$(function() {
+  $( "#accordion" ).accordion({
+    active: false,
+    collapsible: true,
+    heightStyle: "content",
+    // icons: { "header": "plus", "activeHeader": "minus" }
+  });
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.gallery__content-list-item-btn').forEach(function(item) {
+    item.addEventListener('click', function() {
+      // $this.querySelector('.questions__list-item-btn').classList.toggle('actives')
+      if (item.classList.contains('actives')) {
+        item.classList.remove('actives');
+      }
+      else  {
+        document.querySelectorAll('.gallery__content-list-item-btn').forEach(function(item) {
+          item.classList.remove('actives');
+        })
+        item.classList.add('actives');
+      }
+    });
+  });
+});
+
+/* ===== End 3rd-party libraries Calls ===== */
 
 /* Search */
 window.addEventListener('DOMContentLoaded', function() {
@@ -82,38 +120,5 @@ window.addEventListener('click', function(event) {
   }
 });
 
-/* Select */
-const element = document.querySelector('select');
-const choices = new Choices(element, {
-  searchEnabled: false,
-  itemSelectText: '',
-});
 
-
-// /* Accordion */
-// $(function() {
-//   $( "#accordion" ).accordion({
-//     active: false,
-//     collapsible: true,
-//     heightStyle: "content",
-//     // icons: { "header": "plus", "activeHeader": "minus" }
-//   })
-// })
-
-// window.addEventListener('DOMContentLoaded', function() {
-//   document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
-//     item.addEventListener('click', function() {
-//       // $this.querySelector('.questions__list-item-btn').classList.toggle('actives')
-//       if (item.classList.contains('actives')) {
-//         item.classList.remove('actives')
-//       }
-//       else  {
-//         document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
-//           item.classList.remove('actives')
-//         })
-//         item.classList.add('actives')
-//       }
-//     })
-//   })
-// })
 

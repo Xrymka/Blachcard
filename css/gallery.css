@@ -203,6 +203,7 @@
   background: transparent;
   border-radius: 6px;
   border-color: var(--gray);
+  transition: all 0.3s linear;
 }
 
 .is-focused .choices__inner,
@@ -227,8 +228,14 @@
   border-bottom: 1px solid var(--gray);
 }
 
+.choices__list--dropdown .choices__item--selectable {
+  transition: all 0.1s linear;
+}
+
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: rgba(194, 131, 243, 0.4);
+  border-color: var(--white);
+  color: var(--white);
+  background-color: transparent;
 }
 
 .is-selected {
