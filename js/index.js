@@ -54,14 +54,14 @@ $(function() {
 });
 
 window.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.gallery__content-list-item-btn').forEach(function(item) {
+  document.querySelectorAll('.catalog__content-list-item-btn').forEach(function(item) {
     item.addEventListener('click', function() {
       // $this.querySelector('.questions__list-item-btn').classList.toggle('actives')
       if (item.classList.contains('actives')) {
         item.classList.remove('actives');
       }
       else  {
-        document.querySelectorAll('.gallery__content-list-item-btn').forEach(function(item) {
+        document.querySelectorAll('.catalog__content-list-item-btn').forEach(function(item) {
           item.classList.remove('actives');
         })
         item.classList.add('actives');
