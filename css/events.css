@@ -1,0 +1,138 @@
+.events__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Accommodation
+===================*/
+.accommodation-list-item {
+  position: relative;
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
+.accommodation-list-item--last {
+  max-width: 100%;
+  height: 422px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-bottom: 55px;
+
+  background: url('../img/accommodation/9.jpeg') no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+
+.accommodation-picture {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.accommodation-info,
+.accommodation-name,
+.accommodation-place,
+.accommodation-room {
+  margin-left: 45px;
+}
+
+.accommodation-info {
+  display: flex;
+}
+
+.accommodation-price {
+  color: var(--light-gray);
+}
+
+.accommodation-number {
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.accommodation-stars {
+  margin-left: 35px;
+}
+
+.accommodation-name {
+  font-weight: 500;
+}
+
+.accommodation-place {
+  display: block;
+
+  color: var(--gray);
+}
+
+.accommodation-room {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+
+  border: 1px solid var(--orange);
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--orange);
+  background-color: transparent;
+
+  transition: background-color, color 1ms ease-in-out;
+}
+
+.accommodation-room:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.accommodation-room:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.accommodation-room:active {
+  background-color: var(--dark-orange);
+  color: var(--white);
+}
+
+.accommodation-link {
+  font-size: 22px;
+  line-height: 0.6875;
+  color: var(--white);
+
+  transition: font-weight, color 1ms ease-in-out;
+}
+
+.accommodation-link:hover {
+  color: #bebebe;
+  font-weight: 700;
+}
+
+.accommodation-link:focus {
+  padding: 10px;
+  box-shadow: 0 0 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+
+.accommodation-link:active {
+  border-bottom: 1px solid var(--white);
+}
+
+.accommodation-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
