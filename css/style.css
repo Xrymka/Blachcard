@@ -96,6 +96,11 @@ h1, h2, h3, h4, h5, h6, p, strong {
   padding: 0 15px;
 }
 
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* visually-hidden */
 .visually-hidden {
   position: absolute !important;

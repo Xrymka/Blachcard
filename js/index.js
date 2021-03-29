@@ -36,6 +36,23 @@ var galerrySwiper = new Swiper('.gallery__slider', {
   },
 });
 
+var editionsSwiper = new Swiper('.editions__slider', {
+  autoHeight: true,
+  spaceBetween: 50,
+	slidesPerView: 3,
+	slidesPerGroup: 3,
+  slidesPerColumn: 1,
+	slidesPerColumnFill: 'row',
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 /* Select */
 const element = document.querySelector('select');
 const choices = new Choices(element, {
@@ -110,7 +127,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// скрываем выпадающие списки при клике в любой другой части сайта
+// hidden dropdown, if click in any other area on page
 window.addEventListener('click', function(event) {
   if (event.target.className != 'down-list-title') {
     document.querySelectorAll('.down__list').forEach(function(tabContent) {
@@ -120,5 +137,28 @@ window.addEventListener('click', function(event) {
   }
 });
 
+/* Viewbox */
+// if ($(window).width() > 765) {
+//   $('.portfolio__col').slice(0, 3).show();
+//   $('#loadMore').on('click', function(event) {
+//       event.preventDefault();
+
+//       $('.portfolio__col:hidden').slice(0, 3).slideDown();
+//       if ($('.portfolio__col:hidden').length == 0) {
+//           $('#loadMore').hide();
+//       };
+//   });
+// };
+
+// if ($(window).width() < 765) {
+//   $('.portfolio__col').slice(0, 2).show();
+//   $('#loadMore').on('click', function(event) {
+//       event.preventDefault();
 
 
+//       $('.portfolio__col:hidden').slice(0, 2).slideDown();
+//       if ($('.portfolio__col:hidden').length == 0) {
+//           $('#loadMore').hide();
+//       };
+//   });
+// };

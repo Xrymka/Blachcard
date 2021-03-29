@@ -1,138 +1,129 @@
+.events {
+  margin-bottom: 80px;
+}
+
 .events__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-/* Accommodation
-===================*/
-.accommodation-list-item {
-  position: relative;
-  margin-bottom: 20px;
+.event__list-item {
+  max-width: 500px;
+  min-height: 700px;
+  margin-bottom: 49px;
 
-  border-radius: 12px;
   background-color: var(--white);
 }
 
-.accommodation-list-item--last {
-  max-width: 100%;
-  height: 422px;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  margin-bottom: 20px;
-  padding-left: 40px;
-  padding-bottom: 55px;
-
-  background: url('../img/accommodation/9.jpeg') no-repeat;
-  background-size: cover;
-  border-radius: 12px;
+.event__list-item--hidden {
+  display: none;
 }
 
+.event__list-item:not(:nth-child(3n+3)) {
+  margin-right: 50px;
+}
 
-.accommodation-picture {
+.events__article {
+  line-height: 0;
+}
+
+.events__picture {
   width: 100%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
-.accommodation-info,
-.accommodation-name,
-.accommodation-place,
-.accommodation-room {
-  margin-left: 45px;
+.events__info {
+  position: relative;
+  min-height: 400px;
+  padding: 13px 17px 40px 50px;
+
+
+  border: 1px solid var(--light-gray);
+  border-top: none;
 }
 
-.accommodation-info {
-  display: flex;
-}
-
-.accommodation-price {
-  color: var(--light-gray);
-}
-
-.accommodation-number {
-  font-weight: 700;
-  color: var(--dark-gray);
-}
-
-.accommodation-stars {
-  margin-left: 35px;
-}
-
-.accommodation-name {
-  font-weight: 500;
-}
-
-.accommodation-place {
+.events__place,
+.events__date {
   display: block;
 
+  text-align: right;
   color: var(--gray);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
 }
 
-.accommodation-room {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 10px 20px;
-
-  border: 1px solid var(--orange);
-  border-radius: 12px;
-  font-weight: 700;
-  color: var(--orange);
-  background-color: transparent;
-
-  transition: background-color, color 1ms ease-in-out;
+.events__date {
+  margin-bottom: 3px;
 }
 
-.accommodation-room:hover {
-  background-color: var(--orange);
-  color: var(--white);
+.events__title {
+
+  margin-bottom: 3px;
+
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 600;
 }
 
-.accommodation-room:focus {
-  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
-  outline: none;
-  border: none;
-  border-radius: 12px;
+.events__text {
+  max-width: 400px;
+  margin-bottom: 82px;
+
+  font-size: 16px;
+  line-height: 2;
 }
 
-.accommodation-room:active {
-  background-color: var(--dark-orange);
-  color: var(--white);
-}
-
-.accommodation-link {
-  font-size: 22px;
-  line-height: 0.6875;
-  color: var(--white);
-
-  transition: font-weight, color 1ms ease-in-out;
-}
-
-.accommodation-link:hover {
-  color: #bebebe;
-  font-weight: 700;
-}
-
-.accommodation-link:focus {
-  padding: 10px;
-  box-shadow: 0 0 20px;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-radius: 5px;
-}
-
-.accommodation-link:active {
-  border-bottom: 1px solid var(--white);
-}
-
-.accommodation-link::after {
-  content: "";
-  display: block;
+.events__link-more {
+  font-size: 16px;
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  left: 50px;
+  bottom: 43px;
+  line-height: 1.5;
+  color: var(--amethyst);
+
+  border-bottom: 1px solid var(--amethyst);
+
+  transition: font-weight 0.1s linear, color 0.2s linear, border-color 0.2s linear;
+}
+
+.events__link-more:hover {
+  font-weight: 700;
+}
+
+.events__link-more:active {
+  color: var(--faux-cadmium);
+  border-color: var(--faux-cadmium);
+}
+
+.events__inner {
+  text-align: center;
+  align-items: center;
+}
+
+.events__btn {
+  padding: 15px 35px;
+
+  color: var(--amethyst);
+  line-height: 25px;
+  font-weight: 700;
+  border: 2px solid var(--amethyst);
+  border-radius: 100px;
+
+  transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2 linear;
+}
+
+.events__btn:hover {
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.events__btn:active {
+  background-color: var(--faux-cadmium);
+  border-color: var(--faux-bright);
+}
+
+.events__btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--light-amethyst);
 }

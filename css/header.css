@@ -146,7 +146,7 @@
 }
 
 .down__list {
-  opacity: 0;
+  display: none;
   position: absolute;
   width: 300px;
   max-height: 300px;
@@ -159,7 +159,7 @@
 }
 
 .active {
-  opacity: 1;
+  display: block;
 }
 
 .down__list-item {

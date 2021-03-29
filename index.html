@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/events.css">
-  <!-- <link rel="stylesheet" href="css/editions.css">
-  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/editions.css">
+  <!-- <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="css/footer.css"> -->
   <script defer src="js/focus-visible.js"></script>
@@ -200,7 +200,7 @@
 
     <!-- gallery -->
     <section class="gallery" id="gallery">
-      <div class="container container--gallery">
+      <div class="container container--flex">
         <div class="gallery__left">
           <h2 class="section__title">Галерея</h2>
           <div class="gallery__left-inner">
@@ -416,26 +416,179 @@
         <ul class="events__list">
           <li class="event__list-item">
             <article class="events__article">
-              <div class="accommodation-img">
-                <img src="image/events/1.jpg" alt="hotel_1" class="accommodation-picture">
+              <img src="image/events/1.jpg" alt="текстильный принт" class="events__picture">
+              <div class="events__info">
+                <span class="events__place">Музей им. Щусева</span>
+                <span class="events__date">с 20 марта по 30 апреля</span>
+                <h3 class="events__title">Книжная гравюра в живом восприятии</h3>
+                <p class="events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="#" class="events__link-more">Подробнее</a>
               </div>
-              <div class="accommodation-info">
-                <div class="accommodation-price">
-                  от <span class="accommodation-number">4 698 р</span> / ночь
-                </div>
+            </article>
+          </li>
+          <li class="event__list-item">
+            <article class="events__article">
+              <img src="image/events/2.jpg" alt="витражное стекло" class="events__picture">
+              <div class="events__info">
+                <span class="events__place">ММОМА</span>
+                <span class="events__date">24 марта 19:00</span>
+                <h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                <a href="#" class="events__link-more">Подробнее</a>
               </div>
-              <h3 class="accommodation-name">Lagoona española</h3>
-              <span class="accommodation-place">Барселона, Испания</span>
-              <button class="accommodation-room">Номера</button>
+            </article>
+          </li>
+          <li class="event__list-item">
+            <article class="events__article">
+              <img src="image/events/3.jpg" alt="галерея" class="events__picture">
+              <div class="events__info">
+                <span class="events__place">Еврейский музей</span>
+                <span class="events__date">с 31 марта по 21 апреля</span>
+                <h3 class="events__title">Выставка «Формация 2020»</h3>
+                <p class="events__text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <a href="#" class="events__link-more">Подробнее</a>
+              </div>
+            </article>
+          </li>
+          <li class="event__list-item event__list-item--hidden">
+            <article class="events__article">
+              <img src="image/events/4.jpg" alt="цветные платки" class="events__picture">
+              <div class="events__info">
+                <span class="events__place">Третьяковка на Крымском валу</span>
+                <span class="events__date">с 30 марта по 30 апреля</span>
+                <h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events__text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                <a href="#" class="events__link-more">Подробнее</a>
+              </div>
+            </article>
+          </li>
+          <li class="event__list-item event__list-item--hidden">
+            <article class="events__article">
+              <img src="image/events/5.jpg" alt="серебро" class="events__picture">
+              <div class="events__info">
+                <span class="events__place">ММАМ</span>
+                <span class="events__date">с 8 апреля по 20 мая</span>
+                <h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="#" class="events__link-more">Подробнее</a>
+              </div>
             </article>
           </li>
         </ul>
+        <div class="events__inner">
+          <button class="events__btn" id="loadMore">Все события</button>
+        </div>
       </div>
     </section> <!-- /events -->
 
     <!-- editions -->
     <section class="editions" id="editions">
-      <div class="container">
+      <div class="container container--flex">
+        <div class="editions__left">
+          <h2 class="section__title">Издания</h2>
+          <form action="#" class="editions__form">
+            <legend class="editions__legend">Категории</legend>
+            <ul class="editions__list">
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="bestsellers" name="bestsellers">
+                <label class="editions__label" for="bestsellers">Бестселлеры</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="art" name="art">
+                <label class="editions__label"  for="art">Искусство</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="architecture" name="architecture">
+                <label class="editions__label"  for="architecture">Архитектура</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="design" name="design" checked>
+                <label class="editions__label"  for="design">Дизайн</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="fashion" name="fashion">
+                <label class="editions__label"  for="fashion">Мода</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="children" name="children">
+                <label class="editions__label"  for="children">Детям</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="fiction" name="fiction">
+                <label class="editions__label"  for="fiction">Художественная литература</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="journalism" name="journalism">
+                <label class="editions__label"  for="journalism">Публицистика</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="guide" name="guide">
+                <label class="editions__label"  for="guide">Путеводители</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="philosophy" name="philosophy">
+                <label class="editions__label"  for="philosophy">Философия</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="education" name="education">
+                <label class="editions__label"  for="education">Учебная литература</label>
+              </li>
+              <li class="editions__list-item">
+                <input class="editions__check" type="checkbox" id="correspondence" name="correspondence">
+                <label class="editions__label"  for="correspondence">Журналы и газеты</label>
+              </li>
+            </ul>
+          </form>
+          <form action="#" class="editions__form-price">
+            <legend class="editions__legend">Цена</legend>
+            <div class="editions__inner">
+              <label class="editions__label" for="startPrice">От</label>
+              <input class="editions__input" type="number" name="startPrice" id="startPrice" value="50">
+              <label class="editions__label" for="finalPrice">до</label>
+              <input class="editions__input" type="number" name="finalPrice" id="finalPrice" value="25000">
+              <span class="editions__price">руб.</span>
+            </div>
+          </form>
+        </div>
+
+        <div class="editions__right">
+          <div class="swiper-container editions__slider">
+            <div class="swiper-pagination editions__pagination"></div>
+            <div class="swiper-button-prev editions__button-prev"></div>
+            <div class="swiper-button-next editions__button-next"></div>
+            <ul class="swiper-wrapper">
+                <!-- Slides -->
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/1.jpg" alt="Искусство цвета">
+                  <div class="editions__book">
+                    <h3 class="editions__title">Искусство цвета
+                      <span class="editions__author">Иттен, Иоханнес</span>
+                    </h3>
+                    <span class="editions__price">620 руб</span>
+                  </div>
+                  <button class="editions__btn">Заказать</button>
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/2.jpg" alt="Типографика">
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/3.jpg" alt="Книга под буквы">
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/4.jpg" alt="Николай Ильич">
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/5.jpg" alt="Модульные сетки в графическом дизайне">
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/6.jpg" alt="Эволюция графических стилей">
+                </li>
+                <li class="swiper-slide editions__slide" tabindex="0">
+                  <img class="editions__img" src="image/editions/7.jpg" alt="Искусство и визуальное восприятие">
+                </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section> <!-- /editions -->
 
