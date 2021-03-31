@@ -1,5 +1,4 @@
 .editions {
-  padding: 80px 0;
   background: url('../image/editions/bg.jpg') no-repeat center;
 
   color: var(--white);
@@ -72,11 +71,15 @@
   left: 103px;
 }
 
+/* .editions__slide {
+  min-height: 500px;
+} */
+
 .editions__img {
   width: 350px;
   height: 390px;
 
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .editions__slider {
@@ -88,10 +91,13 @@
 .editions__book {
   display: flex;
   justify-content: space-between;
+
+  line-height: 22px;
 }
 
 .editions__title {
-  width: 50%;
+  width: 60%;
+  margin-bottom: 15px;
 
   font-size: 16px;
   font-weight: 700;
@@ -104,4 +110,18 @@
 
 .editions__price {
   font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.editions__btn {
+  padding: 7px 21px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
 }
