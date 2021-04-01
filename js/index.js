@@ -87,6 +87,17 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+/* Ellipse */
+Ellipsis({
+  ellipsis: '…',
+  debounce: 0,
+  responsive: true,
+  className: '.clamp',
+  lines: 1,
+  portrait: null, 
+  break_word: true
+});
+
 /* ===== End 3rd-party libraries Calls ===== */
 
 /* Search */

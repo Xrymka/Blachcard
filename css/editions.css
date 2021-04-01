@@ -4,12 +4,18 @@
   color: var(--white);
 }
 
+.editions__left {
+  padding-top: 8px;
+}
+
 .editions__right {
-  max-width: 72%;
+  max-width: 71.8%;
 }
 
 .editions__legend {
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: .8;
 }
 
 .editions__check {
@@ -18,14 +24,80 @@
   appearance: none;
 }
 
+.editions__check:hover + .editions__label {
+  cursor: pointer;
+}
+
+.editions__check:active + .editions__label {
+  color: var(--faux-cadmium);
+}
+
+.editions__check:active + .editions__label::before {
+  border-color: var(--faux-cadmium);
+}
+
+.editions__check:focus-visible + .editions__label {
+  outline: 2px solid var(--faux-cadmium);
+}
+
+.editions__check:checked + .editions__label::before {
+  border-color: var(--light-amethyst);
+}
+
+.editions__check:checked + .editions__label {
+  color: var(--light-amethyst);
+}
+
+.editions__check:checked + .editions__label::after {
+  display: block;
+}
+
 .editions__label {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+}
+
+.editions__label::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--white);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.editions__label::after {
+  position: absolute;
+  display: none;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid var(--light-amethyst);
+  background-color: var(--light-amethyst);
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.editions__form {
+  margin-bottom: 25px;
+}
+
+.editions__list {
   font-size: 16px;
 }
 
 .editions__pagination {
-  left: 53px;
+  left: 50px;
   width: inherit;
   top: 0;
+
+  font-size: 16px;
 }
 
 .editions__button-prev,
@@ -63,17 +135,13 @@
 }
 
 .editions__button-prev {
-  left: 3px;
+  left: 0;
 }
 
 .editions__button-next {
   right: auto;
-  left: 103px;
+  left: 100px;
 }
-
-/* .editions__slide {
-  min-height: 500px;
-} */
 
 .editions__img {
   width: 350px;
@@ -95,17 +163,22 @@
   line-height: 22px;
 }
 
-.editions__title {
+.editions__info {
+  display: flex;
+  flex-wrap: wrap;
   width: 60%;
-  margin-bottom: 15px;
 
+  margin-bottom: 15px;
+}
+
+.editions__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
 }
 
 .editions__author {
-  font-weight: 400;
+  font-size: 16px;
 }
 
 .editions__price {
@@ -116,12 +189,12 @@
 }
 
 .editions__btn {
-  padding: 7px 21px;
+  padding: 7px 20px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 
-  border: 2px solid #9D5CD0;
+  border: 2px solid var(--amethyst);
   border-radius: 100px;
 }

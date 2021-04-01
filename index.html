@@ -27,6 +27,7 @@
   <script defer src="js/choices.min.js"></script>
   <script defer src="js/jquery.js"></script>
   <script defer src="js/jguery-ui.js"></script>
+  <script defer src="js/ellipsis.min.js"></script>
   <script defer src="js/index.js"></script>
   <title>Blanchcard - художественная галерея</title>
 </head>
@@ -542,9 +543,9 @@
           <form action="#" class="editions__form-price">
             <legend class="editions__legend">Цена</legend>
             <div class="editions__inner">
-              <label class="editions__label" for="startPrice">От</label>
+              <label class="editions__label-price" for="startPrice">От</label>
               <input class="editions__input" type="number" name="startPrice" id="startPrice" value="50">
-              <label class="editions__label" for="finalPrice">до</label>
+              <label class="editions__label-price" for="finalPrice">до</label>
               <input class="editions__input" type="number" name="finalPrice" id="finalPrice" value="25000">
               <span class="editions__price">руб.</span>
             </div>
@@ -557,13 +558,13 @@
             <div class="swiper-button-prev editions__button-prev"></div>
             <div class="swiper-button-next editions__button-next"></div>
             <ul class="swiper-wrapper">
-                <!-- Slides -->
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/1.jpg" alt="Искусство цвета">
                   <div class="editions__book">
-                    <h3 class="editions__title">Искусство цвета
+                    <div class="editions__info">
+                      <h3 class="editions__title">Искусство цвета</h3>
                       <span class="editions__author">Иттен, Иоханнес</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">620 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -571,9 +572,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/2.jpg" alt="Типографика">
                   <div class="editions__book">
-                    <h3 class="editions__title">Типографика
+                    <div class="editions__info">
+                      <h3 class="editions__title">Типографика</h3>
                       <span class="editions__author">Рудер, Эмиль</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">2 450 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -581,9 +583,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/3.jpg" alt="Книга про буквы">
                   <div class="editions__book">
-                    <h3 class="editions__title">Книга про буквы
+                    <div class="editions__info">
+                      <h3 class="editions__title">Книга про буквы</h3>
                       <span class="editions__author">Гордон, Юрий</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">2 200 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -591,9 +594,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/4.jpg" alt="Николай Ильич">
                   <div class="editions__book">
-                    <h3 class="editions__title">Николай Ильич
+                    <div class="editions__info">
+                      <h3 class="editions__title">Николай Ильич</h3>
                       <span class="editions__author">Кричесвиский, Владимир</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">1 100 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -601,9 +605,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/5.jpg" alt="Модульные сетки в графическом дизайне">
                   <div class="editions__book">
-                    <h3 class="editions__title">Модульные сетки в графическом дизайне
+                    <div class="editions__info">
+                      <h3 class="editions__title clamp">Модульные сетки в графическом дизайне</h3>
                       <span class="editions__author">Мюллер-Брокманн, Йозеф</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">1 450 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -611,9 +616,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/6.jpg" alt="Эволюция графических стилей">
                   <div class="editions__book">
-                    <h3 class="editions__title">Эволюция графических стилей
+                    <div class="editions__info">
+                      <h3 class="editions__title clamp">Эволюция графических стилей</h3>
                       <span class="editions__author">Хеллер, Чваст</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">3 200 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
@@ -621,9 +627,10 @@
                 <li class="swiper-slide editions__slide" tabindex="0">
                   <img class="editions__img" src="image/editions/7.jpg" alt="Искусство и визуальное восприятие">
                   <div class="editions__book">
-                    <h3 class="editions__title">Искусство и визуальное восприятие
+                    <div class="editions__info">
+                      <h3 class="editions__title clamp">Искусство и визуальное восприятие</h3>
                       <span class="editions__author">Арнхейм, Рудольф</span>
-                    </h3>
+                    </div>
                     <span class="editions__price">2 200 руб</span>
                   </div>
                   <button class="editions__btn">Заказать</button>
