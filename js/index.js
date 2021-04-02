@@ -53,6 +53,19 @@ var editionsSwiper = new Swiper('.editions__slider', {
   },
 });
 
+var editionsSwiper = new Swiper('.projects__slider', {
+  autoHeight: true,
+  spaceBetween: 50,
+	slidesPerView: 3,
+	slidesPerGroup: 3,
+  slidesPerColumn: 1,
+	slidesPerColumnFill: 'row',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 /* Select */
 const element = document.querySelector('select');
 const choices = new Choices(element, {
@@ -94,7 +107,7 @@ Ellipsis({
   responsive: true,
   className: '.clamp',
   lines: 1,
-  portrait: null, 
+  portrait: null,
   break_word: true
 });
 

@@ -1,4 +1,6 @@
 .editions {
+  padding-bottom: 74px;
+
   background: url('../image/editions/bg.jpg') no-repeat center;
 
   color: var(--white);
@@ -85,11 +87,36 @@
 }
 
 .editions__form {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .editions__list {
   font-size: 16px;
+}
+
+.editions__inner {
+  margin-top: 6px;
+  padding: 0 4px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.editions__label-price {
+  margin: 0 6px;
+}
+
+.editions__input {
+  max-width: 73px;
+  padding: 3px 5px 3px 10px;
+
+  background: rgba(157, 92, 208, 0.5);
+  border: none;
+}
+
+.editions__input:focus {
+  background-color: var(--faux-cadmium);
 }
 
 .editions__pagination {
@@ -156,6 +183,10 @@
   padding-top: 61px;
 }
 
+.editions__slide {
+  min-height: 515px;
+}
+
 .editions__book {
   display: flex;
   justify-content: space-between;
@@ -189,6 +220,7 @@
 }
 
 .editions__btn {
+  position: relative;
   padding: 7px 20px;
 
   font-weight: 700;
@@ -197,4 +229,41 @@
 
   border: 2px solid var(--amethyst);
   border-radius: 100px;
+  transition: all 0.1s linear;
+}
+
+.editions__btn::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 8px);
+  height: calc(100% + 7px);
+  border: 2px solid var(--light-amethyst);
+  border-radius: 100px;
+}
+
+.editions__btn:hover {
+  background-color: var(--amethyst);
+
+  color: var(--white);
+}
+
+.editions__btn:active {
+  background-color: var(--faux-cadmium);
+  border: 2px solid var(--faux-bright);
+}
+
+.editions__btn:focus:not(:focus-visible) {
+  border: 2px solid var(--faux-cadmium);
+  background-color: var(--faux-bright);
+}
+
+.editions__btn:focus-visible {
+  outline: none;
+}
+
+.editions__btn:focus-visible.editions__btn::before {
+  display: block;
 }
