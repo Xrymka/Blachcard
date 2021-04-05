@@ -111,6 +111,29 @@ Ellipsis({
   break_word: true
 });
 
+/* Map */
+ymaps.ready(init);
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    // Координаты центра карты.
+    // Порядок по умолчанию: «широта, долгота».
+    // Чтобы не определять координаты центра карты вручную,
+    // воспользуйтесь инструментом Определение координат.
+      center: [55.75960, 37.637030],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+      zoom: 14
+  });
+
+  var myPlacemark = new ymaps.Placemark([55.758542, 37.600993], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'image/mark.svg',
+    iconImageSize: [20, 20]
+  });
+  myMap.geoObjects.add(myPlacemark);
+}
+
 /* ===== End 3rd-party libraries Calls ===== */
 
 /* Search */

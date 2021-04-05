@@ -1,0 +1,23 @@
+.contacts {
+  padding-top: 8px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__left {
+  width: 34.5%;
+  border: 1px solid var(--light-gray);
+}
+
+.contacts__right {
+  width: 65.5%;
+  height: 700px;
+}
+
+[class*='ground-pane'] {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
