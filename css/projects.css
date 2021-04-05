@@ -9,6 +9,33 @@
   font-size: 16px;
 }
 
+.projects__info:hover #ellipse {
+  fill: var(--amethyst);
+}
+
+.projects__info:hover path {
+  fill: var(--white);
+
+}
+
+.projects__info .tooltip {
+  max-width: 264px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50%;
+}
+
+.projects__info .tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--light-gray) transparent transparent transparent;
+}
+
 .projects__text-link {
   color: var(--amethyst);
   font-weight: 600;
@@ -45,9 +72,15 @@
   min-height: 148px;
   align-items: center;
   border: 1px solid var(--light-gray);
+  transition: border .25s ease;
+}
+
+.projects__list-item:hover {
+  border-color: var(--amethyst);
 }
 
 .projects__link {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 150px;
@@ -56,8 +89,19 @@
 }
 
 .projects__img {
-  margin: auto;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .4;
+  transition: filter .25s ease, opacity .25s ease, transform .2s ease;
+}
+
+.projects__link:hover .projects__img {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .projects__button-prev,
@@ -100,6 +144,5 @@
 }
 
 .projects__button-next {
-  right: auto;
-  left: 100px;
+  right: 0;
 }
