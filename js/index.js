@@ -57,8 +57,9 @@ var editionsSwiper = new Swiper('.projects__slider', {
   autoHeight: true,
   spaceBetween: 50,
 	slidesPerView: 3,
-	slidesPerGroup: 3,
+	slidesPerGroup: 1,
   slidesPerColumn: 1,
+  loop: true,
 	slidesPerColumnFill: 'row',
   navigation: {
     nextEl: '.swiper-button-next',
@@ -123,13 +124,18 @@ function init() {
       center: [55.75960, 37.637030],
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
-      zoom: 14
-  });
+      zoom: 14,
+      controls: [],
+	}, {
+		searchControlProvider: 'yandex#search'
+	});
+
 
   var myPlacemark = new ymaps.Placemark([55.758542, 37.600993], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'image/mark.svg',
-    iconImageSize: [20, 20]
+    iconImageSize: [20, 20],
+    iconImageOffset: [-20, -20]
   });
   myMap.geoObjects.add(myPlacemark);
 }
