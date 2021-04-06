@@ -8,14 +8,14 @@
 }
 
 .contacts__left {
-  width: 34.5%;
+  padding-top: 124px;
+  padding-left: calc((100% - 1630px)/2);
+  width: 35.5%;
   border: 1px solid var(--light-gray);
 }
 
 .contacts__left-wrapper {
-  max-width: 682px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: 15px;
 }
 
 .contacts__contacts {
@@ -30,7 +30,7 @@
 
 .contacts__address {
   display: inline-block;
-  margin-bottom: 36px;
+  margin-bottom: 25px;
 
   font-size: 16px;
 }
@@ -51,7 +51,7 @@
 }
 
 .contacts__form > label {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .contacts__input {
@@ -83,7 +83,7 @@
 }
 
 .contacts__right {
-  width: 65.5%;
+  width: 64.5%;
   height: 700px;
 }
 
