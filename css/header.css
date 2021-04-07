@@ -9,6 +9,8 @@
 /* Header_up */
 .header__up {
   background-color: #000;
+  position: fixed;
+  width: 100%;
 }
 
 .container--header {
@@ -24,15 +26,11 @@
   max-height: 40px;
 }
 
-.header__nav {
-  margin: 0;
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -48%);
+.header__right {
+  width: 78%;
 }
 
+.header__right,
 .header__list,
 .header__down-list {
   display: flex;
@@ -70,6 +68,7 @@
 
 /* Header_down */
 .header__down {
+  padding-top: 100px;
   background: rgba(0, 0, 0, 0.4);
 }
 

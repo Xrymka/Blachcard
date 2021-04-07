@@ -3,12 +3,37 @@
   background-color: var(--black);
 }
 
+.footer__logo-link {
+  max-height: 40px;
+}
+
 .footer__list {
   display: flex;
 }
 
 .footer__list-item:not(:first-child) {
   margin-left: 17px;
+}
+
+.footer__list-item {
+  height: 45.4px;
+  width: 45.4px;
+  display: inline-block;
+  border-radius: 100px;
+
+  transition: all 0.3s linear;
+}
+
+.footer__link {
+  height: 45.4px;
+  width: 45.4px;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.footer__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--light-amethyst);
 }
 
 .footer__link:hover svg path {

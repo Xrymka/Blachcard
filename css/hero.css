@@ -1,6 +1,6 @@
 .hero {
   max-height: 800px;
-  margin-bottom: 89px;
+  margin-bottom: 107px;
 
   color: var(--white);
 }
@@ -61,7 +61,7 @@
 }
 
 .hero__text {
-  margin-bottom: 92px;
+  margin-bottom: 108px;
 
   line-height: 30px;
   letter-spacing: .9px;
@@ -70,7 +70,7 @@
 .hero__btn {
   min-width: 314px;
   min-height: 70px;
-  padding: 22.5px 35px;
+  padding: 20px 35px;
   background-color: var(--amethyst);
   border-radius: 100px;
   transition: border .1s linear, background .1s linear;

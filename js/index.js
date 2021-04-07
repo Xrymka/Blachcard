@@ -142,6 +142,27 @@ function init() {
 
 /* ===== End 3rd-party libraries Calls ===== */
 
+/* Smooth scroll */
+  document.querySelectorAll('a[href^="#"').forEach(link => {
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        const topOffset = document.querySelector('.header__up').offsetHeight;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
 /* Search */
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#input__search').addEventListener('click', function() {
@@ -179,7 +200,6 @@ window.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
-
 // hidden dropdown, if click in any other area on page
 window.addEventListener('click', function(event) {
   if (event.target.className != 'down-list-title') {
@@ -191,27 +211,11 @@ window.addEventListener('click', function(event) {
 });
 
 /* Viewbox */
-// if ($(window).width() > 765) {
-//   $('.portfolio__col').slice(0, 3).show();
-//   $('#loadMore').on('click', function(event) {
-//       event.preventDefault();
-
-//       $('.portfolio__col:hidden').slice(0, 3).slideDown();
-//       if ($('.portfolio__col:hidden').length == 0) {
-//           $('#loadMore').hide();
-//       };
-//   });
-// };
-
-// if ($(window).width() < 765) {
-//   $('.portfolio__col').slice(0, 2).show();
-//   $('#loadMore').on('click', function(event) {
-//       event.preventDefault();
-
-
-//       $('.portfolio__col:hidden').slice(0, 2).slideDown();
-//       if ($('.portfolio__col:hidden').length == 0) {
-//           $('#loadMore').hide();
-//       };
-//   });
-// };
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#loadMore').addEventListener('click', function() {
+    document.querySelector('#loadMore').classList.add('event__list-item--hidden');
+    document.querySelectorAll('.event__list-item').forEach(function(e) {
+      e.classList.remove('event__list-item--hidden');
+    });
+  });
+});

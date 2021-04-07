@@ -4,23 +4,29 @@
 
 .events__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .event__list-item {
   max-width: 500px;
-  min-height: 700px;
+  /* min-height: 700px; */
   margin-bottom: 49px;
+  transition: 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
 
   background-color: var(--white);
 }
 
 .event__list-item--hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
 }
 
-.event__list-item:not(:nth-child(3n+3)) {
+.event__list-item:not(:nth-child(3n+3)):not(:last-child) {
   margin-right: 50px;
 }
 
@@ -110,7 +116,7 @@
   border: 2px solid var(--amethyst);
   border-radius: 100px;
 
-  transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2 linear;
+  transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear;
 }
 
 .events__btn:hover {
