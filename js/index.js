@@ -219,3 +219,9 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/* Accordion */
+// window.addEventListener('DOMContentLoaded', function() {
+
+// })
+

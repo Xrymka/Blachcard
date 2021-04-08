@@ -22,6 +22,11 @@
   cursor: pointer;
 }
 
+.tooltip:focus-visible {
+  outline: none;
+  filter: drop-shadow(0 0 2px rgb(132, 13, 223));
+}
+
 .tooltiptext {
   position: absolute;
   visibility: hidden;

@@ -94,6 +94,7 @@
 
 .catalog__content-name {
   margin-top: 21px; /* temporarily */
+  margin-bottom: 6px;
 
   font-size: 24px;
   font-weight: 600;
@@ -122,12 +123,18 @@
   font-size: 24px;
   line-height: 32px;
   color: var(--dark-charcoal);
+  transition: all .1s linear;
 
+  border-top: 1px solid var(--light-gray);
   border-bottom: 1px solid var(--light-gray);
 }
 
-.catalog__content-list-item:first-child {
-  border-top: 1px solid var(--light-gray);
+.catalog__content-list-item:hover {
+  border-color: var(--amethyst);
+}
+
+.catalog__content-list-item:active {
+  border-color: var(--faux-cadmium);
 }
 
 .catalog__content-list-item-btn {
@@ -137,8 +144,17 @@
   padding-top: 42px;
   padding-left: 0;
   padding-bottom: 47px;
+  transition: all .1s linear;
 
   text-align: left;
+}
+
+.catalog__content-list-item-btn:hover {
+  color: var(--amethyst);
+}
+
+.catalog__content-list-item-btn:active {
+  color: var(--faux-cadmium);
 }
 
 .catalog__content-list-item-icon {
@@ -151,6 +167,50 @@
   border-radius: 100%;
   width: 50px;
   height: 50px;
+  transition: all .1s linear;
 
   font-size: 0;
+}
+
+.catalog__content-list-item-icon::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  left: 50%;
+  top: 50%;
+  transition: all .1s linear;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.catalog__content-list-item-btn:hover .catalog__content-list-item-icon {
+  background-color: var(--amethyst);
+}
+
+.catalog__content-list-item-btn:active .catalog__content-list-item-icon {
+  background-color: var(--faux-cadmium);
+}
+
+.catalog__content-list-item-btn:hover .catalog__content-list-item-icon::before {
+  border-color: var(--white);
+}
+
+.catalog__content-list-item-btn:active .catalog__content-list-item-icon::before {
+  border-color: var(--white);
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.catalog__content-list-item-text {
+  display: none;
+}
+
+.open .catalog__content-list-item-text {
+  display: block;
+}
+
+.open .catalog__content-list-item-icon::before {
+  transform: translate(-50%, -50%) rotate(225deg);
 }
