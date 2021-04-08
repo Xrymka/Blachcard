@@ -221,7 +221,17 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 /* Accordion */
-// window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
+  const accordions = document.querySelector('.catalog__content-list-item');
 
-// })
+  accordions.forEach(el => {
+    el.addEventListener('click', (e) => {
+      const self = e.currentTarget;
+      const control = self.querySelector('.catalog__content-list-item-btn');
+      const content = self.querySelector('.catalog__content-list-item-text');
+
+      self.classList.toggle('open');
+    });
+  });
+});
 
