@@ -181,7 +181,7 @@
   border-bottom: 1px solid var(--black);
   left: 50%;
   top: 50%;
-  transition: all .1s linear;
+  transition: all .2s linear;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
