@@ -60,7 +60,6 @@
 .gallery__slider {
   position: relative;
   min-height: 880px;
-  /* overflow: hidden; */
   margin-top: 96px;
   padding-top: 60px;
 }
